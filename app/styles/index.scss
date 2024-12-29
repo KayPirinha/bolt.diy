@@ -7,10 +7,14 @@
 @use 'components/editor.scss';
 @use 'components/toast.scss';
 
+/* Grundlegende Stile */
 html,
 body {
   height: 100%;
   width: 100%;
+  margin: 0; /* Entfernt Standardabstände */
+  padding: 0; /* Entfernt Standardabstände */
+  overflow: hidden; /* Verhindert unnötige Scrollbalken */
 }
 
 :root {
@@ -21,4 +25,20 @@ body {
   // --primary-color: rgba(147, 112, 219, var(--gradient-opacity));
   // --secondary-color: rgba(138, 43, 226, var(--gradient-opacity));
   // --accent-color: rgba(180, 170, 220, var(--gradient-opacity));
+}
+
+/* Hauptcontainer-Stile */
+#root, .container {
+  max-width: 100%; /* Verhindert, dass der Container die Fensterbreite überschreitet */
+  max-height: 100%; /* Verhindert, dass der Container die Fensterhöhe überschreitet */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Verhindert Scrollbalken im Hauptcontainer */
+}
+
+/* Globale Einstellungen für Animationen */
+* {
+  box-sizing: border-box; /* Verhindert unerwünschtes Verhalten bei Größen */
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
 }
