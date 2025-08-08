@@ -218,6 +218,7 @@ When you add a new model to the MODEL_LIST array, it will immediately be availab
 - `pnpm run typecheck`: Runs TypeScript type checking.
 - `pnpm run typegen`: Generates TypeScript types using Wrangler.
 - `pnpm run deploy`: Builds the project and deploys it to Cloudflare Pages.
+- `pnpm run amiga-quiz`: Starts a small quiz about classic Amiga games in the terminal.
 
 ---
 
